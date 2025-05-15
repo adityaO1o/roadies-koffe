@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 45 76% 52%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 27 40% 46%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 27 40% 30%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 45 76% 52%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 45 76% 52%;
+    --sidebar-primary-foreground: 0 0% 7%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 45 76% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-roadies-dark text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display text-white;
+  }
+}
+
+@layer components {
+  .roadies-btn {
+    @apply border border-white text-white px-6 py-3 bg-transparent transition-colors duration-300 hover:bg-white hover:text-black font-display tracking-wider uppercase;
+  }
+  
+  .roadies-section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-heading {
+    @apply text-4xl md:text-5xl font-display text-roadies-gold mb-8 uppercase;
+  }
+  
+  .menu-category {
+    @apply border-t border-b border-roadies-gold py-4 mb-8;
+  }
+  
+  .menu-category-title {
+    @apply text-3xl font-display text-white mb-6;
+  }
+  
+  .menu-item {
+    @apply mb-4 flex flex-col md:flex-row justify-between;
+  }
+  
+  .menu-item-name {
+    @apply text-white text-lg font-medium;
+  }
+  
+  .menu-item-price {
+    @apply text-roadies-gold font-mono;
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
