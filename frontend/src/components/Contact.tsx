@@ -75,7 +75,7 @@ const Contact = () => {
       <div className="container mx-auto">
         <h2 className="section-heading text-center">RESERVE YOUR SPOT</h2>
         <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto">
-          Book a table or inquire about hosting your event at Roadies Koffeehouz.
+          Apply for franchise or inquire about franchise of Roadies Koffeehouz.
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

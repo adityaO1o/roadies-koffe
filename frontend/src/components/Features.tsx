@@ -28,21 +28,13 @@ const Features = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <FeatureItem 
-            icon={<Wifi size={24} />} 
-            title="Free High-Speed Wi-Fi" 
-            description="Stay connected with lightning-fast internet that keeps up with your workflow." 
-          />
+         
           <FeatureItem 
             icon={<Coffee size={24} />} 
             title="Premium Coffee Selection" 
             description="Specialty-grade beans from around the world, perfectly roasted and brewed." 
           />
-          <FeatureItem 
-            icon={<Users size={24} />} 
-            title="Co-working Space" 
-            description="Dedicated workspace with outlets at every table for the digital nomads and hustlers." 
-          />
+         
           <FeatureItem 
             icon={<Clock size={24} />} 
             title="Opens 24/7" 
@@ -53,11 +45,7 @@ const Features = () => {
             title=" CELEBRITY-DRIVEN Brand" 
             description="Celebrity-backed café serving premium experiences inspired by the spirit of Roadies.." 
           />
-          <FeatureItem 
-            icon={<Calendar size={24} />} 
-            title="Regular Events" 
-            description="From rider meetups to open mic nights, there's always something happening here." 
-          />
+          
         </div>
       </div>
     </section>
