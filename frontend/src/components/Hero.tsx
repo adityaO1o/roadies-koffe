@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
 
       {/* Content Overlay */}
-      <div className="container mx-auto px-4 z-10">
+      <div className="container mx-auto px-4 z-15">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-display mb-4 text-white animate-fade-in">
             <span className="block">FUEL UP. CHILL OUT.</span>
