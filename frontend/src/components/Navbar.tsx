@@ -18,7 +18,7 @@ const Navbar = () => {
         isScrolled ? "bg-black/90 shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4 flex justify-between">
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between relative">
         {/* Left: Hamburger Menu */}
         <div className="flex items-center flex-none">
           <Sheet>
@@ -45,17 +45,19 @@ const Navbar = () => {
           </Sheet>
         </div>
 
-        {/* Center: Logo and Subtitle */}
-        <div className="flex flex-col  flex-1">
-          <a href="#" className="flex flex-col">
+        {/* Center: Logo */}
+        <div className="flex flex-col items-center flex-1">
+          <a href="#" className="flex flex-col items-center justify-center">
             <img
               src="/lovable-uploads/Logo.webp"
               alt="Roadies Koffeehouz Logo"
-              className="h-16 sm:h-20 md:h-24 w-auto object-contain"
+              className="h-16 sm:h-20 md:h-24 object-contain"
               style={{ maxWidth: 120 }}
             />
-            <span className="text-white/70 text-centre font-serif italic"
-                  style={{ letterSpacing: '0.15em' }}>
+            <span
+              className="text-white/70 font-serif italic text-xs sm:text-sm"
+              style={{ letterSpacing: "0.15em" }}
+            >
               Venture of Leapster
             </span>
           </a>

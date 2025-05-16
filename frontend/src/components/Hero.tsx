@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -17,11 +16,13 @@ const Hero = () => {
           allow="autoplay; fullscreen"
           allowFullScreen
         ></iframe>
-        <div className="absolute inset-0 bg-black/70"></div>
+
+        {/* Black overlay on top of video */}
+        <div className="absolute inset-0 bg-black/70 z-10"></div>
       </div>
 
       {/* Content Overlay */}
-      <div className="container mx-auto px-4 z-15">
+      <div className="relative z-20 container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-display mb-4 text-white animate-fade-in">
             <span className="block">FUEL UP. CHILL OUT.</span>
@@ -29,7 +30,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl mb-8 text-white/90 font-serif animate-fade-in">
-           Presenting a truly kick-ass, lifestyle dining experience With strong focus on food, music, events and communities.
+            Presenting a truly kick-ass, lifestyle dining experience with strong focus on food, music, events and communities.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center mt-8 md:mt-12">

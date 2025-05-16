@@ -87,9 +87,9 @@ const Contact = () => {
               title="Address" 
               content={
                 <address className="not-italic">
-                  Roadies Koffeehouz<br />
-                  Sector 82, Noida<br />
-                  Uttar Pradesh, India
+                  Sco 40 , Top Floor or Third Floor<br />
+                  HLP Galeria , Phase 8,<br />
+                  S.A.S. NAGAR Mohali,Punjab
                 </address>
               } 
             />

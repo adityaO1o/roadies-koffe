@@ -15,7 +15,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-white/70 mb-6">
-              "Brewed for the Ride. Built for the Hustle."
+              "A Venture Of Leapster Restaurants Pvt Ltd."
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/roadieskoffeehouz.in/" className="text-white hover:text-roadies-gold transition-colors">
@@ -44,7 +44,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Hours</h4>
             <ul className="space-y-2">
-              <li className="text-white/70">Opens 24/7</li>
+              <li className="text-white/70">Serving you 24x7</li>
            
             </ul>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Roadies Koffeehouz. All rights reserved.
           </p>
           <div className="flex items-center text-white/50 text-sm">
-            <span>A Venture of leapster restaurants pvt ltd.</span>
+            <span>A Venture Of Leapster Restaurants Pvt Ltd.</span>
           </div>
         </div>
       </div>

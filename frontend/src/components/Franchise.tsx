@@ -53,8 +53,12 @@ const Franchise = () => {
 
   return (
  
-    <section id="franchise" className="roadies-section bg-black px-4">
-   
+    <section id="franchise"  className="roadies-section px-4 bg-no-repeat bg-center bg-cover"
+  style={{
+    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/lovable-uploads/loyal.png')",
+  }}
+>
+  
       <div className="container mx-auto " >
         <h2 className="section-heading text-center">
           🏁 Join the Ride — Become a Roadies Koffeehouz Franchise Partner
