@@ -45,13 +45,13 @@ const Features = () => {
           />
           <FeatureItem 
             icon={<Clock size={24} />} 
-            title="Open till Midnight" 
+            title="Opens 24/7" 
             description="Burn the midnight oil or enjoy a late-night caffeine kick before your ride home." 
           />
           <FeatureItem 
             icon={<MapPin size={24} />} 
-            title="Rider-Friendly Parking" 
-            description="Dedicated motorcycle parking right out front with security cameras." 
+            title=" CELEBRITY-DRIVEN Brand" 
+            description="Celebrity-backed café serving premium experiences inspired by the spirit of Roadies.." 
           />
           <FeatureItem 
             icon={<Calendar size={24} />} 

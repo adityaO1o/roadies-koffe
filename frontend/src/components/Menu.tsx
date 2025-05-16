@@ -1,21 +1,19 @@
-
 import { useState } from 'react';
 import { Coffee, Star, Heart } from 'lucide-react';
 
-const MenuCategory = ({ title, icon, items }: { title: string; icon: JSX.Element; items: any[] }) => (
+const MenuCategory = ({ title, icon, items }) => (
   <div className="menu-category">
     <div className="flex items-center mb-4">
       {icon}
       <h3 className="menu-category-title ml-2">{title}</h3>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
       {items.map((item, index) => (
         <div key={index} className="menu-item">
           <div>
             <p className="menu-item-name">{item.name}</p>
             <p className="text-white/70 text-sm">{item.description || ''}</p>
           </div>
-          <p className="menu-item-price md:ml-4">₹{item.price}</p>
         </div>
       ))}
     </div>
@@ -35,91 +33,91 @@ const Menu = () => {
   ];
 
   const bakes = [
-    { name: "Butter Croissant", price: "225" },
-    { name: "Almond Croissant", price: "245" },
-    { name: "Pain Au Chocolat", price: "245" },
-    { name: "Nutella Croissant", price: "255" },
-    { name: "Banana Walnut Slice", price: "205" },
-    { name: "Chocolate Bomboloni", price: "225" },
-    { name: "Something Bomboloni", price: "225" }
+    { name: "Butter Croissant" },
+    { name: "Almond Croissant" },
+    { name: "Pain Au Chocolat" },
+    { name: "Nutella Croissant" },
+    { name: "Banana Walnut Slice" },
+    { name: "Chocolate Bomboloni" },
+    { name: "Something Bomboloni" }
   ];
 
   const cheesecake = [
-    { name: "Vanilla", price: "350" },
-    { name: "Blue Berries", price: "350" },
-    { name: "Nutella", price: "350" },
-    { name: "Strawberries", price: "350" },
-    { name: "Mocha", price: "350" }
+    { name: "Vanilla" },
+    { name: "Blue Berries" },
+    { name: "Nutella" },
+    { name: "Strawberries" },
+    { name: "Mocha" }
   ];
 
   const pancakes = [
-    { name: "CINNAMON MAPLE ", price: "250" },
-    { name: "BANANA NUTELLA ", price: "315" },
+    { name: "CINNAMON MAPLE " },
+    { name: "BANANA NUTELLA " },
   ];
 
   const coldKoffeeBlenders = [
-    { name: "Classic Coffee Rider", price: "275" },
-    { name: "Brownie Fudge Off Roader", price: "335" },
-    { name: "Toffee Tourer", price: "335" },
-    { name: "Mucho Choco Chopper", price: "335" },
-    { name: "Banoffee Bobber", price: "335" }
+    { name: "Classic Coffee Rider" },
+    { name: "Brownie Fudge Off Roader" },
+    { name: "Toffee Tourer" },
+    { name: "Mucho Choco Chopper" },
+    { name: "Banoffee Bobber" }
   ];
 
   const shakes = [
-    { name: "Caramel Popcorn Megastar", price: "375" },
-    { name: "Peanut Butter Chocolate Co-Star", price: "375" },
-    { name: "Strawberry Banana Pornstar", price: "375" },
-    { name: "Oreo Popstar", price: "375" },
-    { name: "Chocolate Filmstar", price: "375" }
+    { name: "Caramel Popcorn Megastar" },
+    { name: "Peanut Butter Chocolate Co-Star" },
+    { name: "Strawberry Banana Pornstar" },
+    { name: "Oreo Popstar" },
+    { name: "Chocolate Filmstar" }
   ];
 
   const espresso = [
-    { name: "Adventure Shot (Medium Strong)", description: "Hot or Iced", price: "125/125" },
-    { name: "Hustle Shot (Super Strong)", description: "Hot or Iced", price: "155/155" }
+    { name: "Adventure Shot (Medium Strong)", description: "Hot or Iced" },
+    { name: "Hustle Shot (Super Strong)", description: "Hot or Iced" }
   ];
 
   const americano = [
-    { name: "Classic Americano", description: "Hot or Iced", price: "195" },
-    { name: "Yuzu Citrus Americano", description: "Iced only", price: "225" },
+    { name: "Classic Americano", description: "Hot or Iced" },
+    { name: "Yuzu Citrus Americano", description: "Iced only" },
   ];
 
   const cappuccino = [
-    { name: "Classic Cappuccino/Latte", description: "Hot or Iced", price: "225/225" },
-    { name: "Toffee Nut Cappuccino/Latte", description: "Hot or Iced", price: "225/225" },
-    { name: "French Vanilla Cappuccino/Latte", description: "Hot or Iced", price: "255/255" },
-    { name: "Irish Cream Cappuccino/Latte", description: "Hot or Iced", price: "255/255" },
-    { name: "Roasted Hazelnut Cappuccino/Latte", description: "Hot or Iced", price: "255/255" }
+    { name: "Classic Cappuccino/Latte", description: "Hot or Iced" },
+    { name: "Toffee Nut Cappuccino/Latte", description: "Hot or Iced" },
+    { name: "French Vanilla Cappuccino/Latte", description: "Hot or Iced" },
+    { name: "Irish Cream Cappuccino/Latte", description: "Hot or Iced" },
+    { name: "Roasted Hazelnut Cappuccino/Latte", description: "Hot or Iced" }
   ];
 
   const mocha = [
-    { name: "Vintage Mocha", description: "Hot or Iced", price: "295/345" },
-    { name: "Dark (70% Cocoa)", description: "Hot or Iced", price: "345" },
-    { name: "Cinnamon Mocha", description: "Hot or Iced", price: "315/345" },
-    { name: "Peppermint Mocha", description: "Hot or Iced", price: "315/345" },
-    { name: "Salted Caramel", description: "Hot or Iced", price: "315/345" }
+    { name: "Vintage Mocha", description: "Hot or Iced" },
+    { name: "Dark (70% Cocoa)", description: "Hot or Iced" },
+    { name: "Cinnamon Mocha", description: "Hot or Iced" },
+    { name: "Peppermint Mocha", description: "Hot or Iced" },
+    { name: "Salted Caramel", description: "Hot or Iced" }
   ];
 
   const sodaPops = [
-    { name: "Wild Berry", price: "275" },
-    { name: "Sunset Orange", price: "275" },
-    { name: "Asian Lemongrass", price: "275" },
-    { name: "Tokyo Yuzu Citrus", price: "275" },
-    { name: "Rio Passion Fruit", price: "275" },
-    { name: "Patna Chilli Guava", price: "275" },
-    { name: "Cuban Mint Mojito", price: "275" }
+    { name: "Wild Berry" },
+    { name: "Sunset Orange" },
+    { name: "Asian Lemongrass" },
+    { name: "Tokyo Yuzu Citrus" },
+    { name: "Rio Passion Fruit" },
+    { name: "Patna Chilli Guava" },
+    { name: "Cuban Mint Mojito" }
   ];
 
   const fauxCocktails = [
-    { name: "Rose & Pomegranate", price: "295" },
-    { name: "Mango & Peach", price: "295" },
-    { name: "Fruit & Ginger", price: "295" }
+    { name: "Rose & Pomegranate" },
+    { name: "Mango & Peach" },
+    { name: "Fruit & Ginger" }
   ];
 
   const teas = [
-    { name: "Green Tea", price: "225" },
-    { name: "English Breakfast", price: "225" },
-    { name: "Peach Iced Tea", price: "225" },
-    { name: "Classic Lemon Iced Tea", price: "225" }
+    { name: "Green Tea" },
+    { name: "English Breakfast" },
+    { name: "Peach Iced Tea" },
+    { name: "Classic Lemon Iced Tea" }
   ];
 
   return (
@@ -129,7 +127,6 @@ const Menu = () => {
         <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto">
           Crafted with precision and served with attitude. Our menu is designed to keep you energized for the ride ahead.
         </p>
-
         <div className="flex flex-wrap gap-2 justify-center mb-10">
           {categories.map(category => (
             <button
