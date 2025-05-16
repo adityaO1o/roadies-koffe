@@ -6,8 +6,8 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
     >
-      {/* YouTube Background Video */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+      {/* Desktop: YouTube Video Background */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden md:block">
         <iframe
           className="w-full h-full object-cover scale-150"
           src="https://www.youtube.com/embed/Io-bvcHx_lA?autoplay=1&mute=1&loop=1&playlist=Io-bvcHx_lA&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
@@ -16,8 +16,17 @@ const Hero = () => {
           allow="autoplay; fullscreen"
           allowFullScreen
         ></iframe>
+        <div className="absolute inset-0 bg-black/70 z-10"></div>
+      </div>
 
-        {/* Black overlay on top of video */}
+      {/* Mobile: Background Image */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center md:hidden"
+        style={{
+          backgroundImage:
+            "url('/public/lovable-uploads/d9a3171a-0e12-4eec-8058-7c880c52e986.png')",
+        }}
+      >
         <div className="absolute inset-0 bg-black/70 z-10"></div>
       </div>
 
